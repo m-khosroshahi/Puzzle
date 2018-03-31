@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Puzzle</string>
+
+
+
+
+
+    <string name="alef">الف</string>
+    <string name="be">ب</string>
+    <string name="pe">پ</string>
+    <string name="te">ت</string>
+    <string name="se">ث</string>
+    <string name="jim">ج</string>
+    <string name="che">چ</string>
+    <string name="ha">ح</string>
+    <string name="khe">خ</string>
+    <string name="dal">د</string>
+    <string name="ze">ذ</string>
+    <string name="re">ر</string>
+    <string name="zee">ز</string>
+    <string name="zhe">ژ</string>
+    <string name="sin">س</string>
+    <string name="shin">ش</string>
+    <string name="sad">ص</string>
+    <string name="zad">ض</string>
+    <string name="ta">ط</string>
+    <string name="za">ظ</string>
+    <string name="ayen">ع</string>
+    <string name="ghayn">غ</string>
+    <string name="fa">ف</string>
+    <string name="ghaf">ق</string>
+    <string name="kaf">ک</string>
+    <string name="gha">گ</string>
+    <string name="lam">ل</string>
+    <string name="mim">م</string>
+    <string name="non">ن</string>
+    <string name="vav">و</string>
+    <string name="he">ه</string>
+    <string name="yav">ی</string>
+
+
+</resources>

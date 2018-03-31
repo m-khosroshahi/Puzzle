@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="keyheight">35dp</dimen>
+    <dimen name="keywidth">35dp</dimen>
+    <dimen name="nextwidth">150dp</dimen>
+    <dimen name="btntextsize">20sp</dimen>
+    <dimen name="textsize">30sp</dimen>
+
+
+
+
+
+
+</resources>

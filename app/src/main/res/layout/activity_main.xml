@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:scrollbars="vertical"
+    tools:context="com.example.milad.puzzle.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgPerson"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="4dp"
+            android:src="@drawable/radan" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textback"
+        android:layout_margin="6dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtFalse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="text"
+            android:typeface="monospace"
+            android:textSize="@dimen/textsize" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtDash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="text"
+            android:typeface="monospace"
+            android:textSize="@dimen/textsize" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:layout_weight=".9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/ha"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/che"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/jim"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/se"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/te"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/pe"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/be"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:onClick="showbtn"
+                android:text="@string/alef"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/shin"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/sin"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/zhe"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/zee"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/re"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/ze"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:onClick="showbtn"
+                android:text="@string/dal"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/khe"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/ghaf"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/fa"
+                android:onClick="showbtn"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="showbtn"
+                android:background="@drawable/keyback"
+                android:text="@string/ghayn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="showbtn"
+                android:background="@drawable/keyback"
+                android:text="@string/ayen"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="showbtn"
+                android:background="@drawable/keyback"
+                android:text="@string/za"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="showbtn"
+                android:background="@drawable/keyback"
+                android:text="@string/ta"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/zad"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/sad"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:onClick="showbtn"
+                android:text="@string/yav"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="showbtn"
+                android:background="@drawable/keyback"
+                android:text="@string/he"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="showbtn"
+                android:background="@drawable/keyback"
+                android:text="@string/vav"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="showbtn"
+                android:background="@drawable/keyback"
+                android:text="@string/non"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="showbtn"
+                android:background="@drawable/keyback"
+                android:text="@string/mim"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/lam"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/gha"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/keyheight"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyback"
+                android:text="@string/kaf"
+                android:onClick="showbtn"
+                android:textSize="@dimen/btntextsize"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+</LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>
